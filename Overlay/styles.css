@@ -1,0 +1,144 @@
+body {
+	font-family: "Montserrat", sans-serif;
+
+	color: white;
+	/* background: black; */
+
+	margin: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  
+	display: flex;
+	flex-direction: column;
+}
+
+.Song {
+  display: flex;
+	position: relative;
+	height: 200px;
+  color: white;
+  text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+
+.Image{
+	position: relative;
+	display: inline-block;
+	/* height: 200px; */
+}
+
+.Image img {
+	display: block;
+}
+
+.Image svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+	transform: rotate(-90deg);
+}
+
+#Progress, #Remaining {
+	fill: none;
+	stroke: white;
+	stroke-width: 6px;
+}
+
+#Remaining{
+	opacity: 0.25;
+}
+
+#Progress {
+	stroke-dasharray: 565.486px, 565.486px;
+	stroke-dashoffset: 0px;
+}
+
+#Score {
+	font-size: 30;
+}
+
+#Song-Progress{
+	position: absolute;
+	top:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	width: 200px;
+	height: 200px;
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.Stats {
+  display: flex;
+  flex-direction: column;
+	align-self: flex-end;
+  justify-content: space-between;
+	margin-left: 5px;
+	font-size: 26px;
+	width: 265px;
+  height: 200px;
+}
+
+.Song-Name {
+  order: 1;
+  align-self: flex-start;
+}
+
+.Song-Difficulty {
+  order: 2;
+  align-self: flex-start;
+}
+
+.Info {
+ display: flex;
+ align-items: flex-end;
+ flex-direction: column;
+ width: 600px;
+}
+
+#Difficulty {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.Performance-Element {
+	/* color: black; */
+	font-size: 28px;
+	font-style: normal;
+	font-weight: bold;
+  white-space:nowrap;
+}
+
+.Performance-Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Performance-Group {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-right: 15px;
+}
+
+.Modifiers {
+	height: 53px;
+	margin: 3px;
+}
+
+.Modifiers img {
+	background-color: #2f4f4f;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+.Hidden {
+	opacity: 0;
+}

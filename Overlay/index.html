@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>Overlay</title>
+		<link rel="stylesheet" href="./styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800" rel="stylesheet"> 
+	</head>
+
+<body>
+  <div class="Song">
+    <div class="Image">
+      <img id="Poster" src="./images/Pistol Whip.png" width="200" height="200">
+      <svg viewBox="0 0 200 200">
+        <circle id="Remaining" r="90" cx="100" cy="100"></circle>
+        <circle id="Progress" r="90" cx="100" cy="100"></circle>
+      </svg>
+      <span class="Time" id="Song-Progress">0:00</span>
+    </div>
+    <div class="Stats">
+      <div class="Performance-Container">
+        <div class="Performance-Group">
+          <div class="Performance-Element">
+            <span class="text">Accuracy: </span>
+            <span class="subtext" id="Accuracy">100</span><span>%</span>
+          </div>
+          <div class="Performance-Element">
+            <span class="text">On Beat: </span>
+            <span class="subtext" id="OnBeat">100</span><span>%</span>
+          </div>
+          <div class="Performance-Element">
+            <span class="subtext" id="Score">0</span>
+          </div>
+        </div>
+        <div class="Performance-Group">
+          <div class="Performance-Element" id="HitsGroup">
+            <span>Hits: </span><span id="HitsValue">0</span>
+          </div>
+          <div class="Performance-Element" id="HitsTakenGroup">
+            <span>Hits Taken: </span><span id="HitsTakenValue">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="Info">
+        <div class="Song-Name">
+          <span id="Song-Name">Song</span><span> by </span><span id="Song-Artist">Artist</span>
+        </div>
+        <div class="Song-Difficulty">
+          <span id="Difficulty">Hard</span> <span id="Song-BPM">..</span><span> BPM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Modifiers" id="Modifiers">
+
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html> 
