@@ -145,11 +145,11 @@ namespace StreamingUtil
 
             Song song = new Song
             {
-                Name = obj.level.data.songDisplayName,
+                Name = obj.level.data.__iv_metaSongDisplayName,
                 Length = obj.level.data.songLength,
                 Artists = LevelMetaDatabase.CachedCurrent.GetArtistFromLevelData(obj.level.data),
                 BPM = LevelMetaDatabase.CachedCurrent.GetTempoFromLevelData(obj.level.data),
-                Icon = $"{obj.level.data.songDisplayName}.png"
+                Icon = $"{obj.level.data.__iv_metaSongDisplayName}.png"
             };
             Server.Default.SendSong(song);
 
