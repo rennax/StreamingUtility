@@ -64,6 +64,9 @@ namespace StreamingUtil
 
         private void OnGameStart(Messages.GameStartEvent obj)
         {
+            if (Server.Default == null || !Server.Default.AnyConnected)
+                return;
+
             Server.Default.SendObj(MessageType.GameStart, "placeholder");
         }
 
@@ -74,12 +77,18 @@ namespace StreamingUtil
 
         private void OnHitsTaken(Enhancements.Messages.UpdateHitsTaken obj)
         {
+            if (Server.Default == null || !Server.Default.AnyConnected)
+                return;
+
             if (config_enableHitsTaken.Value)
                 Server.Default.SendObj(MessageType.HitsTaken, obj.HitsTaken);
         }
 
         private void OnHits(Enhancements.Messages.UpdateHits obj)
         {
+            if (Server.Default == null || !Server.Default.AnyConnected)
+                return;
+
             if (config_enableHits.Value)
                 Server.Default.SendObj(MessageType.Hits, obj.Hits);
         }
@@ -105,7 +114,6 @@ namespace StreamingUtil
         {
             if (Server.Default == null || !Server.Default.AnyConnected)
                 return;
-
             GameInfo info = new GameInfo
             {
                 Score = obj.Score,

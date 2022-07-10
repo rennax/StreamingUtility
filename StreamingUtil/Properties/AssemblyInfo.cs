@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(StreamingUtil.Entry), "StreamingUtil", "1.0.1", "Renaxi")]
+[assembly: MelonInfo(typeof(StreamingUtil.Entry), "StreamingUtil", "1.0.2", "Renaxi")]
 [assembly: MelonGame("Cloudhead Games, Ltd.", "Pistol Whip")]
 [assembly: MelonPriority(100)]
 [assembly: MelonAdditionalDependencies("Enhancements")]
