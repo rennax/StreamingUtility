@@ -141,7 +141,7 @@ function HandleSongSet(song)
 {
   console.log("Song set");
   let img = document.getElementById("Poster");
-  img.src = "images/" + song.Icon;
+  img.src = "data:image/png;base64," + song.Icon;
 
   let artists = document.getElementById("Song-Artist");
   let songName = document.getElementById("Song-Name");
